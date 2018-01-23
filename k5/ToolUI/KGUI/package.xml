@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="szufijg7" jpegQuality="80" compressPNG="true">
+  <resources>
+    <component id="lgyb0" name="剧情" folder="" file="lgyb0.xml" exported="true"/>
+    <component id="lgyb1" name="singleButton" folder="" file="lgyb1.xml"/>
+    <component id="lgyb2" name="normalButton" folder="" file="lgyb2.xml"/>
+    <component id="di723" name="角色行为技能" folder="" file="di723.xml" exported="true"/>
+  </resources>
+  <publish name="KGUI" zipExt="kgui"/>
+</packageDescription>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="474,370">
+  <controller name="c1" pages="0,低级剧情,1,中高级剧情" selected="1"/>
+  <controller name="c2" pages="0,是,1,否" selected="1"/>
+  <displayList>
+    <component id="n3" name="n3" src="lgyb1" xy="1,1">
+      <Button title="低级剧情" controller="c1" page="0"/>
+    </component>
+    <component id="n4" name="n4" src="lgyb1" xy="86,1">
+      <Button checked="true" title="中高级剧情" controller="c1" page="1"/>
+    </component>
+    <component id="n7" name="seniorRes" src="gcza1s" pkg="nk9ejx23" xy="206,74" size="142,20" group="n21"/>
+    <text id="n8" name="n8" xy="29,74" size="181,20" group="n21" fontSize="16" color="#cccccc" text="在资源名（Plot目录中）"/>
+    <graph id="n54" name="seniorCombobox" xy="52,30" size="148,20" group="n21" type="rect"/>
+    <component id="n55" name="seniorNew" src="lgyb2" xy="202,31" group="n21">
+      <Button title="新建"/>
+    </component>
+    <component id="n53" name="seniorSaveLua" src="lgyb2" xy="302,282" group="n21">
+      <Button title="保存Lua数据"/>
+    </component>
+    <component id="n56" name="seniorSaveExcel" src="lgyb2" xy="219,282" group="n21">
+      <Button title="保存excel表"/>
+    </component>
+    <component id="n57" name="isBtn" src="xualt" pkg="nk9ejx23" xy="158,115" group="n21">
+      <Button controller="c2" page="0"/>
+    </component>
+    <text id="n58" name="n58" xy="33,114" size="117,20" group="n21" fontSize="16" color="#cccccc" text="是否为中级剧情"/>
+    <text id="n59" name="n59" xy="44,190" size="253,20" group="n21" fontSize="16" color="#ff6600" text="中级高级对话内容请在资源中配置 "/>
+    <text id="n25" name="n25" xy="36,148" size="189,20" group="n21" fontSize="16" color="#cccccc" text="Boss ID(只用于中级剧情)">
+      <gearDisplay controller="c2" pages="0"/>
+    </text>
+    <component id="n26" name="bossID" src="gcza1s" pkg="nk9ejx23" xy="242,148" size="114,20" group="n21">
+      <gearDisplay controller="c2" pages="0"/>
+    </component>
+    <component id="n69" name="seniorDel" src="lgyb2" xy="348,31" group="n21">
+      <Button title="删除ID"/>
+    </component>
+    <group id="n21" name="n21" xy="29,30" size="394,271" advanced="true" collapsed="true">
+      <gearDisplay controller="c1" pages="1"/>
+    </group>
+    <component id="n22" name="npcTxt" src="au3n6k" pkg="nk9ejx23" xy="86,102" size="361,64" group="n24"/>
+    <text id="n23" name="n23" xy="11,107" size="69,20" group="n24" fontSize="16" color="#cccccc" text="NPC问答:"/>
+    <component id="n27" name="model" src="gcza1s" pkg="nk9ejx23" xy="86,70" size="114,20" group="n24"/>
+    <text id="n28" name="n28" xy="14,70" size="53,20" group="n24" fontSize="16" color="#cccccc" text="模型ID"/>
+    <text id="n29" name="n29" xy="213,70" size="53,20" group="n24" fontSize="16" color="#cccccc" text="动作ID"/>
+    <component id="n30" name="clip" src="gcza1s" pkg="nk9ejx23" xy="276,70" group="n24"/>
+    <component id="n31" name="nextPID" src="gcza1s" pkg="nk9ejx23" xy="130,303" size="120,20" group="n24"/>
+    <text id="n32" name="n32" xy="20,303" size="101,20" group="n24" fontSize="16" color="#cccccc" text="下一个剧情ID"/>
+    <graph id="n61" name="juniorCombobox" xy="128,38" size="148,20" group="n24" type="rect"/>
+    <component id="n62" name="juniorNew" src="lgyb2" xy="278,39" group="n24">
+      <Button title="新建"/>
+    </component>
+    <component id="n63" name="interval" src="gcza1s" pkg="nk9ejx23" xy="154,270" group="n24"/>
+    <text id="n64" name="n64" xy="17,270" size="133,20" group="n24" fontSize="16" color="#cccccc" text="停留时间(秒 1.0)"/>
+    <component id="n65" name="heroTxt" src="au3n6k" pkg="nk9ejx23" xy="88,176" size="361,64" group="n24"/>
+    <text id="n66" name="n66" xy="11,181" size="77,20" group="n24" fontSize="16" color="#cccccc" text="英雄问答:"/>
+    <component id="n67" name="juniorSaveLua" src="lgyb2" xy="352,333" group="n24">
+      <Button title="保存Lua数据"/>
+    </component>
+    <component id="n68" name="juniorSaveExcel" src="lgyb2" xy="269,333" group="n24">
+      <Button title="保存excel表"/>
+    </component>
+    <component id="n70" name="seniorDel" src="lgyb2" xy="383,39" group="n24">
+      <Button title="删除ID"/>
+    </component>
+    <group id="n24" name="n24" xy="11,38" size="447,314" advanced="true">
+      <gearDisplay controller="c1" pages="0"/>
+    </group>
+  </displayList>
+</component>

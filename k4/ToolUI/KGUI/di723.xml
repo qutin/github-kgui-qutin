@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="950,400">
+  <controller name="c1" pages="0,动作控制,1,技能,2,AI,3,场景,4,剧情" selected="4"/>
+  <displayList>
+    <graph id="n1" name="n1" xy="0,0" size="239,400" locked="true" type="rect" lineColor="#ffcccccc" fillColor="#ff333333"/>
+    <graph id="n2" name="n2" xy="711,0" size="239,400" locked="true" type="rect" lineColor="#ffcccccc" fillColor="#ff333333"/>
+    <component id="n5" name="n5" src="lgyb1" xy="325,1">
+      <Button title="技能" controller="c1" page="1"/>
+    </component>
+    <component id="n9" name="n9" src="lgyb1" xy="409,1">
+      <Button title="AI" controller="c1" page="2"/>
+    </component>
+    <component id="n10" name="n10" src="lgyb1" xy="241,1">
+      <Button title="动作控制" controller="c1" page="0"/>
+    </component>
+    <component id="n11" name="n11" src="lgyb1" xy="493,1">
+      <Button title="场景" controller="c1" page="3"/>
+    </component>
+    <text id="n12" name="n12" xy="78,6" size="77,22" fontSize="18" color="#bdbdbd" text="英雄配置"/>
+    <text id="n13" name="n13" xy="785,6" size="104,22" fontSize="18" color="#bdbdbd" text="Monster配置"/>
+    <graph id="n15" name="heroCombobox" xy="1,46" size="148,20" type="rect"/>
+    <component id="n16" name="n16" src="lgyb1" xy="577,1">
+      <Button checked="true" title="剧情" controller="c1" page="4"/>
+    </component>
+    <component id="n17" name="plot" src="lgyb0" xy="238,32">
+      <gearDisplay controller="c1" pages="4"/>
+    </component>
+    <component id="n18" name="n18" src="lgyb2" xy="151,47">
+      <Button title="新建"/>
+    </component>
+    <component id="n22" name="n22" src="gcza1s" pkg="nk9ejx23" xy="57,100" size="71,16">
+      <Label title="123456789"/>
+    </component>
+    <graph id="n0" name="behaviorHero" xy="239,49" size="472,16" group="n29" type="rect">
+      <gearDisplay controller="c1" pages="0"/>
+    </graph>
+    <text id="n24" name="n24" xy="244,31" size="53,16" group="n29" fontSize="12" color="#bdbdbd" text="英雄动作"/>
+    <graph id="n25" name="behaviorMonster" xy="240,83" size="472,16" group="n29" type="rect">
+      <gearDisplay controller="c1" pages="0"/>
+    </graph>
+    <text id="n26" name="n26" xy="246,65" size="53,16" group="n29" fontSize="12" color="#bdbdbd" text="怪物动作"/>
+    <graph id="n27" name="behaviorAll" xy="240,134" size="472,16" group="n29" type="rect">
+      <gearDisplay controller="c1" pages="0"/>
+    </graph>
+    <text id="n28" name="n28" xy="446,117" size="77,16" group="n29" fontSize="12" color="#bdbdbd" text="双方总百分比"/>
+    <group id="n29" name="n29" xy="239,31" size="473,119" advanced="true">
+      <gearDisplay controller="c1" pages="0"/>
+    </group>
+    <component id="n30" name="n30" src="gcza1s" pkg="nk9ejx23" xy="2,162" size="71,15"/>
+    <component id="n31" name="n31" src="gcza1s" pkg="nk9ejx23" xy="23,131" size="71,16">
+      <Label title="123456789"/>
+    </component>
+    <component id="n32" name="n32" src="gcza1s" pkg="nk9ejx23" xy="149,88" size="71,16">
+      <Label title="123456789"/>
+    </component>
+    <component id="n33" name="n33" src="gcza1s" pkg="nk9ejx23" xy="145,164" size="71,16">
+      <Label title="123456789"/>
+    </component>
+    <text id="n34" name="n34" xy="5,146" size="83,16" fontSize="12" color="#00ff00" text="技能1（特殊）"/>
+    <text id="n35" name="n35" xy="24,119" size="83,16" fontSize="12" color="#00ff00" text="技能2（固有）"/>
+    <text id="n36" name="n36" xy="58,85" size="83,16" fontSize="12" color="#00ff00" text="技能3（固有）"/>
+    <text id="n37" name="n37" xy="142,70" size="95,16" fontSize="12" color="#00ff00" text="技能4可学习通用"/>
+    <text id="n38" name="n38" xy="147,147" size="53,16" fontSize="12" color="#00ff00" text="普通攻击"/>
+  </displayList>
+</component>
